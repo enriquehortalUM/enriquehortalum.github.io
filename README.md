@@ -1,4 +1,4 @@
-# Enrique Hortal Quesada — Academic Personal Site
+# Enrique Hortal — Academic Personal Site
 
 Academic personal website.
 
