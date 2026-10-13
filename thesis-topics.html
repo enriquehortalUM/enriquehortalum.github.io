@@ -1,10 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Available thesis topics offered by Enrique Hortal Quesada — Maastricht University.">
-  <title>Thesis Topics — Enrique Hortal Quesada</title>
+  <meta name="description" content="Available thesis topics offered by Enrique Hortal Quesada, Maastricht University.">
+  <title>Thesis topics, Enrique Hortal Quesada</title>
+
+  <style>
+    /* Basic page styling also supports viewing this file without the site assets. */
+    :root { color-scheme: light; --thesis-accent: #175b67; --thesis-border: #dce5e7; }
+    body { margin: 0; font-family: system-ui, sans-serif; color: #25343a; background: #fff; line-height: 1.65; }
+    .container { max-width: 1080px; margin: auto; padding: 0 24px; }
+    a { color: var(--thesis-accent); text-underline-offset: 3px; }
+    .site-header { border-bottom: 1px solid var(--thesis-border); padding: 18px 0; }
+    .site-header .container { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .site-name { font-weight: 700; text-decoration: none; white-space: nowrap; }
+    .nav-links { display: flex; flex-wrap: wrap; gap: 14px; list-style: none; padding: 0; margin: 0; font-size: .87rem; }
+    .nav-links a { text-decoration: none; }
+    .nav-links .active { font-weight: 700; }
+    .menu-toggle { display: none; }
+    .page-hero { padding: 48px 0; }
+    .page-hero h1 { font-size: clamp(2rem, 4vw, 3rem); line-height: 1.2; margin: 16px 0; }
+    .back-link, .section-label { display: block; }
+    .section-label { font-size: .82rem; font-weight: 700; color: var(--thesis-accent); margin-top: 18px; }
+    .section { padding: 32px 0; }
+    .section-alt { background: #f4f8f8; }
+    .section-title { margin: 8px 0 16px; }
+    .section-intro { max-width: 80ch; }
+    .research-lines-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 26px; }
+    .rl-card { border: 1px solid var(--thesis-border); background: #fff; border-radius: 10px; padding: 16px; }
+    .rl-card summary { cursor: pointer; font-weight: 600; }
+    .rl-body { padding-top: 14px; font-size: .94rem; }
+    .rl-icon { margin-right: 6px; }
+    .degree-section { border: 1px solid var(--thesis-border); border-radius: 12px; margin: 20px 0; background: #fff; overflow: hidden; }
+    .degree-summary { display: flex; align-items: center; gap: 16px; cursor: pointer; padding: 22px 24px; background: #eef5f5; list-style: none; }
+    .degree-summary::-webkit-details-marker { display: none; }
+    .degree-summary::before { content: '▸'; font-size: 1.25rem; color: var(--thesis-accent); }
+    .degree-section[open] > .degree-summary::before { content: '▾'; }
+    .degree-summary h2 { font-size: 1.25rem; margin: 0; }
+    .degree-count { margin-left: auto; font-size: .86rem; color: #52666d; white-space: nowrap; }
+    summary:focus-visible, a:focus-visible, button:focus-visible { outline: 3px solid #d08e35; outline-offset: 4px; }
+    .degree-body { padding: 24px; }
+    .topic-card { border: 1px solid var(--thesis-border); border-radius: 10px; margin-bottom: 24px; overflow: hidden; }
+    .topic-card:last-child { margin-bottom: 0; }
+    .topic-header { padding: 24px; }
+    .topic-level { color: var(--thesis-accent); font-weight: 600; font-size: .83rem; }
+    .topic-header h3 { font-size: 1.2rem; line-height: 1.4; margin: 10px 0; }
+    .topic-intro { margin: 12px 0; }
+    .topic-canvas { font-size: .92rem; }
+    .topic-details { border-top: 1px solid var(--thesis-border); }
+    .topic-details > summary { cursor: pointer; padding: 14px 24px; font-weight: 600; background: #fafcfc; }
+    .topic-details-body { padding: 4px 24px 18px; }
+    .topic-details-body h4 { font-size: 1rem; margin-bottom: 6px; }
+    .ref-list { padding-left: 22px; font-size: .91rem; overflow-wrap: anywhere; }
+    .ref-list li { margin-bottom: 10px; }
+    .site-footer { padding: 24px 0; border-top: 1px solid var(--thesis-border); font-size: .88rem; }
+    @media (max-width: 760px) {
+      .research-lines-grid { grid-template-columns: 1fr; }
+      .site-header .container { align-items: flex-start; }
+      .menu-toggle { display: block; margin-left: auto; border: 1px solid var(--thesis-border); border-radius: 5px; background: white; padding: 6px 10px; }
+      .nav-links { display: none; flex-direction: column; margin-top: 12px; }
+      .nav-links.open { display: flex; }
+      .degree-body { padding: 12px; }
+      .degree-summary { padding: 18px; }
+      .topic-header { padding: 18px; }
+      .topic-details > summary { padding: 12px 18px; }
+      .topic-details-body { padding: 4px 18px 16px; }
+    }
+  </style>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -36,8 +99,8 @@
     <div class="page-hero section-alt">
       <div class="container">
         <a href="index.html" class="back-link">← Back to main page</a>
-        <span class="section-label">Available Thesis Topics</span>
-        <h1>Thesis Topics</h1>
+        <span class="section-label">Available thesis topics</span>
+        <h1>Thesis topics</h1>
         <p>BSc and MSc thesis topics available for supervision at the Department of Advanced Computing Sciences.</p>
       </div>
     </div>
@@ -46,11 +109,9 @@
     <section class="section section-alt">
       <div class="container">
         <span class="section-label">Research lines</span>
-        <h2 class="section-title">General Research Areas</h2>
+        <h2 class="section-title">General research areas</h2>
         <p class="section-intro" style="margin-top:-0.5rem">
-          BSc and MSc projects can be proposed within any of the following research themes.
-          If you have a specific idea, feel free to
-          <a href="mailto:enrique.hortal@maastrichtuniversity.nl">get in touch</a>.
+          BSc and MSc projects can be proposed within any of the following research themes. If you have a specific idea, feel free to <a href="mailto:enrique.hortal@maastrichtuniversity.nl">get in touch</a>.
         </p>
         <div class="research-lines-grid">
 
@@ -58,12 +119,12 @@
             <summary>
               <span class="rl-summary-inner">
                 <span class="rl-icon">📡</span>
-                <span class="rl-title">Physiological Sensor Analysis for Human Activity Recognition</span>
+                <span class="rl-title">Physiological sensor analysis for human activity recognition</span>
               </span>
               <span class="rl-toggle"></span>
             </summary>
             <div class="rl-body">
-              Using wearable sensors and signal processing to recognise human activities, gestures, and states from physiological data streams such as accelerometry, EMG, and ECG.
+              Using wearable sensors and signal processing to recognise human activities, gestures, and states from physiological data streams such as accelerometry, EEG, EMG, and ECG.
             </div>
           </details>
 
@@ -71,12 +132,12 @@
             <summary>
               <span class="rl-summary-inner">
                 <span class="rl-icon">🏥</span>
-                <span class="rl-title">Machine Learning in Medical Applications</span>
+                <span class="rl-title">Machine learning in medical applications</span>
               </span>
               <span class="rl-toggle"></span>
             </summary>
             <div class="rl-body">
-              Developing and evaluating ML models for clinical decision support, diagnosis, prognosis prediction, and treatment monitoring from structured and time-series clinical data.
+              Developing and evaluating ML models for clinical decision support, diagnosis, prognosis prediction, and treatment monitoring using structured and time-series clinical data.
             </div>
           </details>
 
@@ -84,12 +145,12 @@
             <summary>
               <span class="rl-summary-inner">
                 <span class="rl-icon">🧠</span>
-                <span class="rl-title">Deep Learning for Medical Imaging</span>
+                <span class="rl-title">Deep learning for medical imaging</span>
               </span>
               <span class="rl-toggle"></span>
             </summary>
             <div class="rl-body">
-              Applying convolutional and transformer-based architectures to analyse medical images including ECG recordings, CT scans, MRI, and other biomedical modalities.
+              Applying convolutional and transformer-based architectures to analyse medical images and physiological signals, including CT and MRI scans, ECG recordings and other biomedical data.
             </div>
           </details>
 
@@ -97,12 +158,12 @@
             <summary>
               <span class="rl-summary-inner">
                 <span class="rl-icon">🔁</span>
-                <span class="rl-title">Self-Supervised Learning</span>
+                <span class="rl-title">Self-supervised learning</span>
               </span>
               <span class="rl-toggle"></span>
             </summary>
             <div class="rl-body">
-              Leveraging unlabelled data through pretext tasks and contrastive learning objectives to develop rich representations for domains where annotations are scarce or costly.
+              Using unlabelled data through pretext tasks and contrastive learning objectives to develop rich representations in domains where annotations are scarce or costly.
             </div>
           </details>
 
@@ -110,7 +171,7 @@
             <summary>
               <span class="rl-summary-inner">
                 <span class="rl-icon">〰️</span>
-                <span class="rl-title">Signal Processing</span>
+                <span class="rl-title">Signal processing</span>
               </span>
               <span class="rl-toggle"></span>
             </summary>
@@ -123,12 +184,12 @@
             <summary>
               <span class="rl-summary-inner">
                 <span class="rl-icon">💡</span>
-                <span class="rl-title">Affective Computing</span>
+                <span class="rl-title">Affective computing</span>
               </span>
               <span class="rl-toggle"></span>
             </summary>
             <div class="rl-body">
-              Recognising and modelling emotional and cognitive states from physiological signals, facial behaviour, speech, and multimodal data — for applications in education, healthcare, XR environments, and industrial training.
+              Recognising and modelling emotional and cognitive states from physiological signals, facial behaviour, speech, and multimodal data, for applications in education, healthcare, XR environments, and industrial training.
             </div>
           </details>
 
@@ -136,45 +197,42 @@
       </div>
     </section>
 
-    <!-- ═══ SECTION 2: CONCRETE TOPICS ═════════════════════ -->
-    <section class="section">
+    <section class="section" aria-labelledby="available-topics">
       <div class="container">
         <span class="section-label">Concrete topics</span>
-        <h2 class="section-title">Available MSc Thesis Topics</h2>
-        <p class="section-intro" style="margin-top:-0.5rem">
-          The following topics are currently open for supervision. Click any section heading to expand it.
-          Interested students are welcome to contact me at
-          <a href="mailto:enrique.hortal@maastrichtuniversity.nl">enrique.hortal@maastrichtuniversity.nl</a>.
-        </p>
-
+        <h2 class="section-title" id="available-topics">Available thesis topics</h2>
+        <p class="section-intro">Choose a degree level to browse the available topics. Each section can be expanded to see the concrete topics available, and each topic has expandable details. Interested students are welcome to contact <a href="mailto:enrique.hortal@maastrichtuniversity.nl">enrique.hortal@maastrichtuniversity.nl</a>.</p>
+        <details class="degree-section" id="msc-theses">
+          <summary class="degree-summary"><h2>MSc theses</h2><span class="degree-count">3 (+3) topics</span></summary>
+          <div class="degree-body">
         <!-- ── Topic 1 ───────────────────────────────────── -->
         <div class="topic-card">
           <div class="topic-header">
-            <span class="topic-level">MSc Thesis · Machine Learning</span>
-            <h3>Machine Learning for Robust and Interpretable Physiological Monitoring in Anaesthesia</h3>
+            <span class="topic-level">MSc thesis · machine learning</span>
+            <h3>Machine learning for robust and interpretable physiological monitoring in anaesthesia</h3>
             <p class="topic-intro">
-              Modern anaesthesia generates large volumes of high-resolution physiological data — ECG, arterial blood pressure, oxygen saturation, respiratory signals, anaesthetic depth indices, drug administration records, and perioperative outcomes. Open datasets such as <strong>VitalDB</strong> provide an unprecedented opportunity to develop ML methods for intraoperative monitoring, early warning systems, and clinical decision support. Several research directions are available depending on student interests.
+              Modern anaesthesia generates large volumes of high-resolution physiological data, ECG, arterial blood pressure, oxygen saturation, respiratory signals, anaesthetic depth indices, drug administration records, and perioperative outcomes. Open datasets such as <strong>VitalDB</strong> provide an unprecedented opportunity to develop ML methods for intraoperative monitoring, early warning systems, and clinical decision support. Several research directions are available depending on student interests.
             </p>
             <a href="https://canvas.maastrichtuniversity.nl/courses/6314/pages/machine-learning-machine-learning-for-robust-and-interpretable-physiological-monitoring-in-anaesthesia-several-topics-available" target="_blank" rel="noopener" class="topic-canvas">→ View full description on Canvas</a>
           </div>
 
           <details class="topic-details">
-            <summary>Objectives &amp; Alternative Topics</summary>
+            <summary>Objectives &amp; alternative topics</summary>
             <div class="topic-details-body">
               <div class="alt-topic">
-                <h4>Alternative 1 — Predicting anaesthetic depth from physiological signals</h4>
+                <h4>Alternative 1, predicting anaesthetic depth from physiological signals</h4>
                 <p>Develop models that estimate anaesthetic depth or BIS-related states from multimodal physiological recordings. The work will compare classical signal processing, interpretable ML, and deep learning to better understand the physiological determinants of anaesthetic depth.</p>
               </div>
               <div class="alt-topic">
-                <h4>Alternative 2 — Personalised anaesthesia monitoring</h4>
+                <h4>Alternative 2, personalised anaesthesia monitoring</h4>
                 <p>Investigate whether patient-specific and adaptive ML models can improve prediction of physiological deterioration during surgery, accounting for inter-patient variability in physiological responses to anaesthesia, surgical stimulation, and pharmacological interventions.</p>
               </div>
               <div class="alt-topic">
-                <h4>Alternative 3 — Early prediction of intraoperative hypotension</h4>
-                <p>Develop ML models capable of predicting hypotensive episodes several minutes before onset using multimodal physiological waveforms, vital signs, drug administration data, and patient characteristics — providing clinically useful early warning systems.</p>
+                <h4>Alternative 3, early prediction of intraoperative hypotension</h4>
+                <p>Develop ML models capable of predicting hypotensive episodes several minutes before onset using multimodal physiological waveforms, vital signs, drug administration data, and patient characteristics, providing clinically useful early warning systems.</p>
               </div>
               <div class="alt-topic">
-                <h4>Alternative 4 — Data quality assessment and artefact detection</h4>
+                <h4>Alternative 4, data quality assessment and artefact detection</h4>
                 <p>Create automated methods for identifying artefacts, sensor failures, calibration problems, missing-data patterns, and unreliable waveform segments in large-scale physiological datasets, improving both research reproducibility and clinical AI reliability.</p>
               </div>
             </div>
@@ -190,7 +248,7 @@
           </details>
 
           <details class="topic-details">
-            <summary>Expected Outputs</summary>
+            <summary>Expected outputs</summary>
             <div class="topic-details-body">
               <p>A reproducible ML pipeline for analysing large-scale physiological monitoring data, together with a quantitative evaluation of predictive or diagnostic models for a clinically relevant perioperative task. Expected deliverables include a well-documented codebase, benchmark comparisons of modelling approaches, analysis of clinically relevant physiological features, and recommendations for reliable AI-based monitoring. Results may be suitable for conference or journal publication.</p>
             </div>
@@ -201,7 +259,7 @@
             <div class="topic-details-body">
               <ul class="ref-list">
                 <li>Lee, H.C., Jung, C.W., et al. (2022). VitalDB, a high-fidelity multi-parameter vital signs database in surgical patients. <em>Scientific Data</em>, 9, 279. <a href="https://www.nature.com/articles/s41597-022-01411-5" target="_blank" rel="noopener">Link</a></li>
-                <li>Santamónica, A., Canedo, C., <strong>Hortal, E.</strong>, &amp; Rueda, C. Robust and Interpretable EEG Features for Early Outcome Prediction After Cardiac Arrest. <em>Artificial Intelligence in Medicine</em> (under review).</li>
+                <li>Santamónica, A., Canedo, C., <strong>Hortal, E.</strong>, &amp; Rueda, C. <em>Robust and interpretable EEG analysis framework for early outcome prediction after cardiac arrest.</em> <em>Artificial Intelligence in Medicine</em> (under review).</li>
               </ul>
             </div>
           </details>
@@ -211,8 +269,8 @@
         <!-- ── Topic 2 ───────────────────────────────────── -->
         <div class="topic-card">
           <div class="topic-header">
-            <span class="topic-level">MSc Thesis · Machine Learning</span>
-            <h3>Beyond Affect Labels: Evaluating and Improving Emotion Annotation Strategies for Physiological Computing</h3>
+            <span class="topic-level">MSc thesis · machine learning</span>
+            <h3>Beyond affect labels: evaluating and improving emotion annotation strategies for physiological computing</h3>
             <p class="topic-intro">
               Affective computing systems rely on labelled physiological datasets to train emotion recognition models. However, the quality of the annotation process itself often has a larger impact on model performance than the choice of algorithm. Existing datasets use a wide variety of labelling approaches (protocol-based labels, continuous self-reporting, post-hoc questionnaires, ecological momentary assessments) yet little work has systematically investigated which strategies produce labels most consistent with the underlying physiological signals.
             </p>
@@ -228,23 +286,23 @@
           </details>
 
           <details class="topic-details">
-            <summary>Methodology &amp; Datasets</summary>
+            <summary>Methodology &amp; datasets</summary>
             <div class="topic-details-body">
               <p>The project will analyse multiple affective computing datasets collected using different annotation methodologies and emotional elicitation protocols. Datasets in <em>italics</em> are already part of prior work:</p>
               <ul class="ref-list" style="margin-bottom:1rem">
-                <li><em>WESAD</em> — protocol-based labels assigned by experimental design</li>
-                <li><em>CASE</em> — continuous real-time valence/arousal annotations</li>
-                <li><em>DREAMER</em> — post-hoc SAM questionnaires</li>
-                <li>DEAP — valence, arousal, dominance and liking ratings</li>
-                <li>MAHNOB-HCI — multimodal recordings with self-assessment labels</li>
-                <li>SWELL-KW — stress and user modelling dataset</li>
+                <li><em>WESAD</em>, protocol-based labels assigned by experimental design</li>
+                <li><em>CASE</em>, continuous real-time valence/arousal annotations</li>
+                <li><em>DREAMER</em>, post-hoc SAM questionnaires</li>
+                <li>DEAP, valence, arousal, dominance and liking ratings</li>
+                <li>MAHNOB-HCI, multimodal recordings with self-assessment labels</li>
+                <li>SWELL-KW, stress and user modelling dataset</li>
               </ul>
               <p>The work will include: (1) implementation and extension of the existing validation framework, (2) development of additional label-quality metrics, (3) comparison of annotation schemes within and across datasets, (4) analysis of temporal alignment between labels and physiological signals, and (5) evidence-based recommendations for affective dataset design.</p>
             </div>
           </details>
 
           <details class="topic-details">
-            <summary>Expected Outputs</summary>
+            <summary>Expected outputs</summary>
             <div class="topic-details-body">
               <p>An extended framework for evaluating affective label quality, a systematic comparison of annotation methodologies, and practical recommendations for researchers collecting new affective datasets. Deliverables include a reproducible benchmarking framework and a well-documented software pipeline. Results may be suitable for conference or journal publication.</p>
             </div>
@@ -254,7 +312,7 @@
             <summary>References</summary>
             <div class="topic-details-body">
               <ul class="ref-list">
-                <li><strong>Hortal, E.</strong>, &amp; Semerci, Y.C. (2026). Affective Computing for Education and Industrial Training: Principles and Guidelines for Reliable Affect Labelling. (under review)</li>
+                <li><strong>Hortal, E.</strong>, &amp; Semerci, Y. C. <em>Affective computing for education and industrial training: principles and guidelines for reliable affect labelling.</em> Springer/XR2Learn book chapter. <strong>Accepted for publication; unpublished.</strong></li>
                 <li>Singh, P., et al. (2026). FEEL: Quantifying heterogeneity in physiological signals for generalizable emotion recognition. <em>Advances in Neural Information Processing Systems</em>, 38.</li>
                 <li>Schmidt, P., et al. (2018). Introducing WESAD, a multimodal dataset for wearable stress and affect detection. <em>ACM ICMI 2018</em>, pp. 400–408.</li>
                 <li>Sharma, K., et al. (2019). A dataset of continuous affect annotations and physiological signals for emotion analysis. <em>Scientific Data</em>, 6(1), 196.</li>
@@ -271,8 +329,11 @@
         <!-- ── Markerless 3D Motion Capture (Nutrition and Movement Sciences) ───────────────── -->
         <div class="topic-card">
           <div class="topic-header">
-            <span class="topic-level">MSc Thesis · Computer Vision · Biomechanics</span>
-            <h3>Markerless 3D Motion Capture</h3>
+            <span class="topic-level">MSc thesis · computer vision · biomechanics</span>
+
+            <span class="topic-collaboration">In collaboration with UMC Utrecht</span>
+            
+            <h3>Markerless 3D motion capture</h3>
             <p class="topic-intro">
               3D motion capture is a common technique in biomechanical research and is at the forefront of clinical motion research, rehabilitation, and improving the performance of world-class athletes. However, most techniques require dedicated environments with specialised software and hardware (such as <strong>VICON</strong>, which uses infrared cameras and reflective markers placed on the participant's body), together with biomechanical models such as the <strong>Conventional Gait Model 2 (CGM2)</strong>. Markerless tracking technology is now developing rapidly and is increasingly applied in biomechanical research. The Department of Nutrition and Movement Sciences is setting up and evaluating a markerless tracking system running on open-source software and recently acquired AI-supported cameras.
             </p>
@@ -311,7 +372,7 @@
           </details>
 
           <details class="topic-details">
-            <summary>Student Profile &amp; Contact</summary>
+            <summary>Student profile &amp; contact</summary>
             <div class="topic-details-body">
               <p><strong>Technical skills:</strong> Experience with, or eagerness to learn, programming (e.g. MATLAB and Python) is preferred.</p>
               <p><strong>Language:</strong> Non-Dutch speaking students are welcome to apply.</p>
@@ -331,8 +392,8 @@
         <!--
         <div class="topic-card">
           <div class="topic-header">
-            <span class="topic-level">MSc Thesis · Internship · Biomedical AI</span>
-            <h3>Joint Embedding Learning of Cardiac MRI &amp; Radio-Frequency Sensing</h3>
+            <span class="topic-level">MSc thesis · internship · biomedical AI</span>
+            <h3>Joint embedding learning of cardiac MRI &amp; radio-frequency sensing</h3>
             <p class="topic-intro">
               Cardiovascular disease remains the leading cause of death worldwide. Imaging modalities such as echocardiography and cardiac MRI are the gold standard for measuring mechanical cardiac biomarkers, yet they are limited to single-point, hospital-based measurements.
               PrecorDx and UMC Utrecht have developed a promising non-invasive technique called radio-frequency sensing (RFS), which uses compact, on-body RF antennas to track cardiac activity outside hospital settings and enable longitudinal monitoring. This project explores the use of foundation models (FM) and contrastive learning strategies to discover a shared embedding space between cardiac MR data and RF signals — opening a path toward continuous, home-based cardiovascular assessment.
@@ -355,7 +416,7 @@
           </details>
         
           <details class="topic-details">
-            <summary>Methodology &amp; Tasks</summary>
+            <summary>Methodology &amp; tasks</summary>
             <div class="topic-details-body">
               <p>
                 The project follows a multi-modal embedding learning architecture in which separate FM encoders map cardiac MRI and RF sensing data to a shared latent space, which is subsequently used to predict clinical outcome variables. The student will carry out the following core tasks:
@@ -374,7 +435,7 @@
           </details>
         
           <details class="topic-details">
-            <summary>Expected Outputs</summary>
+            <summary>Expected outputs</summary>
             <div class="topic-details-body">
               <p>
                 A reproducible Python pipeline for cross-modal embedding extraction, trained and validated multimodal FM encoders with a shared embedding space, and a validated model for direct clinical parameter prediction from RF embeddings. The student will also produce written documentation and team reports. Results may contribute directly to the development of a breakthrough medical device targeting heart failure patients, and may be suitable for publication.
@@ -383,7 +444,7 @@
           </details>
         
           <details class="topic-details">
-            <summary>Student Profile &amp; Contact</summary>
+            <summary>Student profile &amp; contact</summary>
             <div class="topic-details-body">
               <p><strong>Educational background:</strong> MSc candidate in Electrical Engineering, Biomedical Engineering, Applied Physics, Artificial Intelligence, or Scientific Computing.</p>
               <p><strong>Technical skills:</strong> Machine and deep learning, Python, and experience with at least one major framework (PyTorch, TensorFlow, or JAX). Familiarity with biomedical data is valued.</p>
@@ -402,8 +463,8 @@
         <!--
         <div class="topic-card">
           <div class="topic-header">
-            <span class="topic-level">MSc Internship · Signal Processing · Biomedical AI</span>
-            <h3>Feasibility Study of a Reduced-Electrode EEG-Based Stroke Detector</h3>
+            <span class="topic-level">MSc internship · signal processing · biomedical AI</span>
+            <h3>Feasibility study of a reduced-electrode EEG-based stroke detector</h3>
             <p class="topic-intro">
               Stroke is one of the leading causes of death and disability worldwide, occurring when an artery to the brain becomes blocked (ischemic stroke) or ruptures (hemorrhagic stroke). Time-to-treatment is critical to outcomes — an estimated 1.9 million neurons die every minute following an ischemic stroke — yet timely stroke detection remains a major barrier to effective treatment. Prior studies using EEG for stroke detection in hospital and pre-hospital (ambulance) settings have shown encouraging results. This project builds on that work to assess the feasibility of an improved, faster stroke detector.
             </p>
@@ -422,7 +483,7 @@
           </details>
         
           <details class="topic-details">
-            <summary>Methodology &amp; Tasks</summary>
+            <summary>Methodology &amp; tasks</summary>
             <div class="topic-details-body">
               <p>
                 The project combines signal processing and ML/AI methods to evaluate reduced EEG montages against detection performance. The intern will carry out the following core tasks:
@@ -438,7 +499,7 @@
           </details>
         
           <details class="topic-details">
-            <summary>Expected Outputs</summary>
+            <summary>Expected outputs</summary>
             <div class="topic-details-body">
               <p>
                 A feasibility assessment of a reduced-electrode EEG stroke detector, including recommended electrode count and placement, an estimate of detector performance under this reduced configuration, and a technical document summarising methods and findings. Results may inform the design of a future point-of-care or pre-hospital stroke detection device.
@@ -447,7 +508,7 @@
           </details>
         
           <details class="topic-details">
-            <summary>Student Profile &amp; Contact</summary>
+            <summary>Student profile &amp; contact</summary>
             <div class="topic-details-body">
               <p><strong>Educational background:</strong> MSc candidate in Engineering, Neuroscience, Life Science, Data Science, Computer Science, or related fields.</p>
               <p><strong>Technical skills:</strong> Familiarity with signal processing and ML/AI methods. Previous experience analysing EEG or other electrophysiological signals is a plus.</p>
@@ -463,6 +524,654 @@
 
         
 
+          </div>
+        </details>
+        <details class="degree-section" id="bsc-theses">
+          <summary class="degree-summary"><h2>BSc theses</h2><span class="degree-count">10+ topics</span></summary>
+          <div class="degree-body">
+            <p class="section-intro">These projects are designed for BSc theses, with an initial focused research question, experimental scope and outputs. Data access and the final scope will be agreed with the supervisor.</p>
+<div class="topic-card">
+  <div class="topic-header">
+    <span class="topic-level">BSc thesis · self-supervised learning &amp; signal processing</span>
+    <h3>Are common data augmentations actually valid for physiological signals?</h3>
+    <p class="topic-intro">Self-supervised learning uses transformations such as jittering, scaling, cropping and time warping to create training examples. These transformations may also change physiologically meaningful information: time warping an ECG, for example, alters apparent cardiac timing. This thesis will investigate which augmentations preserve the information needed for a selected physiological prediction task.</p>
+  </div>
+  <details class="topic-details">
+    <summary>Objectives &amp; research questions</summary>
+    <div class="topic-details-body">
+      <div class="alt-topic">
+        <h4>Objective 1</h4>
+        <p>Measure how augmentation type and strength affect physiological features and downstream prediction.</p>
+      </div>
+      <div class="alt-topic">
+        <h4>Objective 2</h4>
+        <p>Test whether a simple feature-preservation criterion helps select useful augmentations rather than assuming that generic time-series transformations are valid.</p>
+      </div>
+    </div>
+  </details>
+  <details class="topic-details">
+    <summary>Methodology</summary>
+    <div class="topic-details-body">
+      <p>The student will use ECG or PPG from public datasets such as WESAD, with a single classification task and a compact contrastive encoder. Compare three or four augmentations at predefined strengths against supervised and unaugmented baselines.</p>
+      <p>The student will measure beat timing, heart-rate summaries and waveform characteristics before and after transformation. Separate real physiological variation from transformation-induced changes, accounting for feature-extractor failures.</p>
+      <p>The student will split participants before creating windows or augmented examples. Tune augmentation choices within training folds and evaluate subject-independent performance and feature distortion across repeated seeds.</p>
+    </div>
+  </details>
+  <details class="topic-details">
+    <summary>Expected outputs</summary>
+    <div class="topic-details-body">
+      <p>A reproducible augmentation benchmark, a feature-distortion report, downstream performance comparisons and practical recommendations for the selected signal and task. The conclusions will be specific to the tested physiology rather than a universal claim of augmentation validity.</p>
+      <p>Ideally, an easy-to-use, well-documented open-source library implementing the proposed methods.</p>
+    </div>
+  </details>
+  <details class="topic-details">
+    <summary>References</summary>
+    <div class="topic-details-body">
+      <ul class="ref-list">
+        <li>Schmidt, P., Reiss, A., Dürichen, R., Marberger, C., &amp; Van Laerhoven, K. (2018). Introducing WESAD, a Multimodal Dataset for Wearable Stress and Affect Detection. <em>ICMI</em>, 400–408. <a href="https://doi.org/10.1145/3242969.3242985" target="_blank" rel="noopener">Paper</a>.</li>
+        <li>Chen, T., Kornblith, S., Norouzi, M., &amp; Hinton, G. (2020). A Simple Framework for Contrastive Learning of Visual Representations. <em>PMLR</em>, 119, 1597–1607. Methodological background from computer vision; physiological validity must be tested separately. <a href="https://proceedings.mlr.press/v119/chen20j.html" target="_blank" rel="noopener">Paper</a>.</li>
+      </ul>
+    </div>
+  </details>
+</div>
+            
+<div class="topic-card">
+  <div class="topic-header">
+    <span class="topic-level">BSc thesis · affective computing &amp; noisy labels</span>
+    <h3>Detecting potentially incorrect individual emotion labels from physiological data</h3>
+    <p class="topic-intro">Emotion annotations can be ambiguous, temporally misaligned or poorly supported by recorded physiology. In a previous work (book chapter accepted for publication) <strong>Hortal</strong>strong and Semerci introduce four diagnostics for assessing physiological support for labels at the dataset and annotation-scheme levels. This thesis will extend that work to <strong>detecting potentially incorrect labels in individual samples</strong>, using controlled label corruption to establish known error locations for evaluation.</p>
+  </div>
+  <details class="topic-details">
+    <summary>Objectives &amp; research questions</summary>
+    <div class="topic-details-body">
+      <div class="alt-topic">
+        <h4>Objective 1</h4>
+        <p>Compare out-of-fold disagreement, neighbourhood consistency and ensemble-based scores for recovering deliberately corrupted labels.</p>
+      </div>
+      <div class="alt-topic">
+        <h4>Objective 2</h4>
+        <p>Test whether down-weighting or excluding flagged training samples improves classification on untouched held-out subjects.</p>
+      </div>
+    </div>
+  </details>
+  <details class="topic-details">
+    <summary>Methodology</summary>
+    <div class="topic-details-body">
+      <p>The student will use public datasets such as WESAD or discretised CASE labels; distinguish protocol-assigned stress conditions from verified subjective emotion ground truth. Define windows and label discretisation before experimentation.</p>
+      <p>The student will introduce known label flips in training data at several rates, including random and temporally clustered corruption. The detector must not access the corruption mask; reserve that mask for evaluation. Treat original annotations as a reference, not certified truth.</p>
+      <p>The student will generate scores through participant-grouped out-of-fold predictions. Fit neighbours and all preprocessing on the appropriate training fold. Report precision–recall AUC, precision at a fixed review budget and recall of injected errors.</p>
+      <p>The student will compare removal or weighting against no filtering, random removal and confidence filtering at matched budgets. Tune on training/validation subjects and evaluate once on untouched test subjects. Naturally flagged samples remain candidates for review; without independent annotation, they cannot be declared erroneous.</p>
+    </div>
+  </details>
+  <details class="topic-details">
+    <summary>Expected outputs</summary>
+    <div class="topic-details-body">
+      <p>A sample-scoring pipeline, a benchmark against known injected errors, an analysis of downstream benefits and a review list of naturally suspicious annotations with documented limitations. Unlike the chapter’s diagnostic battery, the contribution is localising candidate errors and validating that localisation under controlled corruption.</p>
+      <p>Ideally, an easy-to-use, well-documented open-source library implementing the proposed methods.</p>
+    </div>
+  </details>
+  <details class="topic-details">
+    <summary>References</summary>
+    <div class="topic-details-body">
+      <ul class="ref-list">
+        <li><strong>Hortal, E.</strong>, &amp; Semerci, Y. C. <em>Affective computing for education and industrial training: principles and guidelines for reliable affect labelling.</em> Springer/XR2Learn book chapter. <strong>Accepted for publication; unpublished.</strong></li>
+        <li>Schmidt, P., Reiss, A., Dürichen, R., Marberger, C., &amp; Van Laerhoven, K. (2018). Introducing WESAD, a Multimodal Dataset for Wearable Stress and Affect Detection. <em>ICMI</em>, 400–408. <a href="https://doi.org/10.1145/3242969.3242985" target="_blank" rel="noopener">Paper</a>.</li>
+        <li>Sharma, K., Castellini, C., van den Broek, E. L., Albu-Schaeffer, A., &amp; Schwenker, F. (2019). A dataset of continuous affect annotations and physiological signals for emotion analysis. <em>Scientific Data</em>, 6, 196. <a href="https://www.nature.com/articles/s41597-019-0209-0" target="_blank" rel="noopener">Paper</a>.</li>
+      </ul>
+    </div>
+  </details>
+</div>
+  
+<div class="topic-card">
+  <div class="topic-header">
+    <span class="topic-level">BSc thesis · physiological machine learning &amp; uncertainty</span>
+    <h3>Quality-aware prediction reliability, uncertainty and selective prediction</h3>
+    <p class="topic-intro">A physiological model can make a confident prediction that is nevertheless incorrect. Previous work by Santamónica, <strong>Hortal</strong> and colleagues using EEG uses outlier, cohesion, flatness and sharpness measures, alongside recording recency, to select suitable segments. This thesis will investigate whether signal quality provides <strong>information about prediction reliability beyond calibrated model confidence</strong>, and whether combining the two supports selective prediction.</p>
+  </div>
+  <details class="topic-details">
+    <summary>Objectives &amp; research questions</summary>
+    <div class="topic-details-body">
+      <div class="alt-topic">
+        <h4>Objective 1</h4>
+        <p>Compare confidence-only, quality-only and combined reliability estimates.</p>
+      </div>
+      <div class="alt-topic">
+        <h4>Objective 2</h4>
+        <p>Evaluate error detection, calibration and the risk–coverage trade-off when a model abstains on predictions estimated to be unreliable.</p>
+      </div>
+    </div>
+  </details>
+  <details class="topic-details">
+    <summary>Methodology</summary>
+    <div class="topic-details-body">
+      <p>The student will use an existing EEG feature pipeline and accessible I-CARE partitions, subject to data access and computational feasibility. A pre-agreed alternative is one VitalDB task with suitable waveform-quality indicators. Reuse established quality measures rather than proposing another quality score.</p>
+      <p>The student will keep every patient in the evaluation. For EEG, distinguish usable-EEG and clinical-only cases, mirroring the manuscript’s handling of patients without usable EEG. Avoid assuming that low amplitude or low quality is merely artefact: clinically meaningful abnormal EEG can resemble poor signal quality.</p>
+      <p>The student will use participant-grouped training, calibration, reliability-model validation and untouched test partitions, or nested grouped cross-validation. Train a lightweight error predictor on held-out or out-of-fold classifier outputs and quality features; never train it on optimistic in-sample errors.</p>
+      <p>The student will compare calibrated confidence with quality and combined estimates using error-detection AUROC and precision–recall AUC, Brier score or log loss, calibration plots and risk–coverage curves. Select abstention thresholds using validation data. Report coverage and subgroup performance as well as error reduction.</p>
+    </div>
+  </details>
+  <details class="topic-details">
+    <summary>Expected outputs</summary>
+    <div class="topic-details-body">
+      <p>A quality-aware reliability pipeline, calibrated probability analysis and selective-prediction benchmark. The manuscript reports test AUC 0.868 and Challenge Score 0.694 within 24 hours after return of spontaneous circulation using EEG features and clinical covariates; it does not establish that quality adds error-detection value beyond calibrated confidence. That incremental value, including a possible null result, is the thesis question.</p>
+      <p>Ideally, an easy-to-use, well-documented open-source library implementing the proposed methods.</p>
+    </div>
+  </details>
+  <details class="topic-details">
+    <summary>References</summary>
+    <div class="topic-details-body">
+      <ul class="ref-list">
+        <li>Santamónica, A., Canedo, C., <strong>Hortal, E.</strong>, &amp; Rueda, C. <em>Robust and interpretable EEG analysis framework for early outcome prediction after cardiac arrest.</em> <em>Artificial Intelligence in Medicine</em> (under review).</li>
+        <li>Lee, H. C., et al. (2022). VitalDB, a high-fidelity multi-parameter vital signs database in surgical patients. <em>Scientific Data</em>, 9, 279. <a href="https://www.nature.com/articles/s41597-022-01411-5" target="_blank" rel="noopener">Paper</a>.</li>
+      </ul>
+    </div>
+  </details>
+</div>
+
+<!--
+<div class="topic-card">
+  <div class="topic-header">
+    <span class="topic-level">BSc thesis · computer vision &amp; biomechanics</span>
+    <h3>Can biomechanical constraints detect errors in markerless motion capture?</h3>
+    <p class="topic-intro">Markerless motion capture can produce inaccurate poses when a person is occluded or viewed from a difficult angle. Changes in estimated bone length, implausible joint angles and abrupt temporal discontinuities may reveal some of these errors, although inaccurate poses can also appear anatomically plausible. This thesis will evaluate simple biomechanical indicators for detecting unreliable pose estimates.</p>
+  </div>
+  <details class="topic-details">
+    <summary>Objectives &amp; research questions</summary>
+    <div class="topic-details-body">
+      <div class="alt-topic">
+        <h4>Objective 1</h4>
+        <p>Quantify which biomechanical indicators identify pose estimates exceeding a predefined error threshold.</p>
+      </div>
+      <div class="alt-topic">
+        <h4>Objective 2</h4>
+        <p>Test whether combining indicators improves error detection beyond the pose estimator’s own confidence.</p>
+      </div>
+    </div>
+  </details>
+  <details class="topic-details">
+    <summary>Methodology</summary>
+    <div class="topic-details-body">
+      <p>The student will use existing synchronised video, markerless reconstructions and marker-based VICON reference measurements, subject to confirmed access. Restrict the study to one or two movements; use a documented public paired dataset if local reference recordings are unavailable.</p>
+      <p>The student will align coordinate systems and timestamps, calculate joint-position or angle errors, and define acceptable-error thresholds for the selected measurement. Build interpretable scores from bone-length changes, angle limits and temporal smoothness.</p>
+      <p>The student will compare individual rules, keypoint confidence and a lightweight combined detector. Hold out participants and, where feasible, a movement or recording condition. Evaluate error-detection precision–recall and false alarms, including inaccurate poses that remain anatomically plausible.</p>
+    </div>
+  </details>
+  <details class="topic-details">
+    <summary>Expected outputs</summary>
+    <div class="topic-details-body">
+      <p>An interpretable pose-quality tool, validation against reference measurements and an analysis of which failure types evade biomechanical checks. Existing biomechanics-based reconstruction is background; the focused contribution is evaluating low-cost error indicators across held-out conditions.</p>
+    </div>
+  </details>
+  <details class="topic-details">
+    <summary>References</summary>
+    <div class="topic-details-body">
+      <ul class="ref-list">
+        <li>Uhlrich, S. D., et al. (2023). OpenCap: Human movement dynamics from smartphone videos. <em>PLOS Computational Biology</em>, 19(10), e1011462. <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011462" target="_blank" rel="noopener">Paper</a>.</li>
+      </ul>
+    </div>
+  </details>
+</div>
+-->
+
+
+<div class="topic-card">
+  <div class="topic-header">
+    <span class="topic-level">BSc thesis · affective computing &amp; domain adaptation</span>
+    <h3>Can we personalise emotion recognition models without emotion labels?</h3>
+    <p class="topic-intro">Physiological responses differ between individuals, making personalisation attractive for emotion recognition. However, obtaining labelled emotional recordings from every new user is often impractical. This thesis will investigate whether a short period of unlabelled physiological recording can improve an existing model’s predictions for an unseen participant.</p>
+  </div>
+  <details class="topic-details">
+    <summary>Objectives &amp; research questions</summary>
+    <div class="topic-details-body">
+      <div class="alt-topic">
+        <h4>Objective 1</h4>
+        <p>Compare a population model with participant-specific normalisation and one simple distribution-alignment method.</p>
+      </div>
+      <div class="alt-topic">
+        <h4>Objective 2</h4>
+        <p>Measure how adaptation benefit changes with the amount of available unlabelled calibration data.</p>
+      </div>
+    </div>
+  </details>
+  <details class="topic-details">
+    <summary>Methodology</summary>
+    <div class="topic-details-body">
+      <p>The student will use public datasets such as WESAD or CASE and hold out participants. Set aside an initial calibration segment from each target participant and a separate evaluation segment; target evaluation labels remain hidden during adaptation.</p>
+      <p>The student will compare training-only normalisation, target normalisation and a lightweight alignment method. Any self-supervised adaptation will be kept as an optional extension after the main baselines work.</p>
+      <p>The student will vary calibration duration and assess balanced accuracy or macro-F1 across participants, including negative transfer and condition imbalance. Do not use future evaluation segments for adaptation unless explicitly presenting a separate transductive setting.</p>
+    </div>
+  </details>
+  <details class="topic-details">
+    <summary>Expected outputs</summary>
+    <div class="topic-details-body">
+      <p>A reproducible personalisation benchmark, calibration-duration curves and recommendations about when unlabelled adaptation helps or harms. Hortal and Semerci’s XR2Learn chapter motivates careful annotation design, but does not demonstrate successful unlabelled personalisation.</p>
+      <p>Ideally, an easy-to-use, well-documented open-source library implementing the proposed methods.</p>
+    </div>
+  </details>
+  <details class="topic-details">
+    <summary>References</summary>
+    <div class="topic-details-body">
+      <ul class="ref-list">
+        <li><strong>Hortal, E.</strong>, &amp; Semerci, Y. C. <em>Affective computing for education and industrial training: principles and guidelines for reliable affect labelling.</em> Springer/XR2Learn book chapter. <strong>Accepted for publication; unpublished.</strong></li>
+        <li>Schmidt, P., Reiss, A., Dürichen, R., Marberger, C., &amp; Van Laerhoven, K. (2018). Introducing WESAD, a Multimodal Dataset for Wearable Stress and Affect Detection. <em>ICMI</em>, 400–408. <a href="https://doi.org/10.1145/3242969.3242985" target="_blank" rel="noopener">Paper</a>.</li>
+        <li>Sharma, K., Castellini, C., van den Broek, E. L., Albu-Schaeffer, A., &amp; Schwenker, F. (2019). A dataset of continuous affect annotations and physiological signals for emotion analysis. <em>Scientific Data</em>, 6, 196. <a href="https://www.nature.com/articles/s41597-019-0209-0" target="_blank" rel="noopener">Paper</a>.</li>
+      </ul>
+    </div>
+  </details>
+</div>
+  
+<div class="topic-card">
+  <div class="topic-header">
+    <span class="topic-level">BSc thesis · affective computing &amp; representation analysis</span>
+    <h3>Are physiological emotion models learning emotions or recognising individuals?</h3>
+    <p class="topic-intro">Physiological features may encode a participant’s identity as well as information associated with affect. A model evaluated using randomly divided recording windows may therefore perform well while generalising poorly to new participants. This thesis will examine identity information in learned representations and its relationship to subject-independent emotion or stress recognition.</p>
+  </div>
+  <details class="topic-details">
+    <summary>Objectives &amp; research questions</summary>
+    <div class="topic-details-body">
+      <div class="alt-topic">
+        <h4>Objective 1</h4>
+        <p>Compare emotion or stress performance under random-window and participant-held-out evaluation.</p>
+      </div>
+      <div class="alt-topic">
+        <h4>Objective 2</h4>
+        <p>Probe representations for participant identity and test one simple intervention, such as participant normalisation.</p>
+      </div>
+    </div>
+  </details>
+  <details class="topic-details">
+    <summary>Methodology</summary>
+    <div class="topic-details-body">
+      <p>The student will train a compact model on public datasets such as WESAD or CASE, extract features or intermediate representations, and compare evaluation protocols while preventing overlapping-window leakage.</p>
+      <p>For identity probing, use separate recording blocks from the same known participants in probe training and testing; an identity classifier cannot meaningfully identify classes absent from its training set. Separately evaluate affect recognition on unseen participants.</p>
+      <p>The student will control for class balance and recording conditions. Compare raw features, learned features and normalised features; examine whether changes in identity predictability coincide with improved affect transfer. Identity information alone does not prove shortcut use or harm.</p>
+    </div>
+  </details>
+  <details class="topic-details">
+    <summary>Expected outputs</summary>
+    <div class="topic-details-body">
+      <p>A representation-audit pipeline, a comparison of evaluation protocols and evidence about the trade-off between identity information and affect generalisation. The <strong>Hortal</strong> and Semerci chapter’s weak physiological support for some labels motivates this audit (see reference below), but is not itself evidence that models learn identity.</p>
+      <p>Ideally, an easy-to-use, well-documented open-source library implementing the proposed methods.</p>
+    </div>
+  </details>
+  <details class="topic-details">
+    <summary>References</summary>
+    <div class="topic-details-body">
+      <ul class="ref-list">
+        <li><strong>Hortal, E.</strong>, &amp; Semerci, Y. C. <em>Affective computing for education and industrial training: principles and guidelines for reliable affect labelling.</em> Springer/XR2Learn book chapter. <strong>Accepted for publication; unpublished.</strong></li>
+        <li>Schmidt, P., Reiss, A., Dürichen, R., Marberger, C., &amp; Van Laerhoven, K. (2018). Introducing WESAD, a Multimodal Dataset for Wearable Stress and Affect Detection. <em>ICMI</em>, 400–408. <a href="https://doi.org/10.1145/3242969.3242985" target="_blank" rel="noopener">Paper</a>.</li>
+        <li>Sharma, K., Castellini, C., van den Broek, E. L., Albu-Schaeffer, A., &amp; Schwenker, F. (2019). A dataset of continuous affect annotations and physiological signals for emotion analysis. <em>Scientific Data</em>, 6, 196. <a href="https://www.nature.com/articles/s41597-019-0209-0" target="_blank" rel="noopener">Paper</a>.</li>
+      </ul>
+    </div>
+  </details>
+</div>
+  
+<div class="topic-card">
+  <div class="topic-header">
+    <span class="topic-level">BSc thesis · medical AI &amp; missing data</span>
+    <h3>Does missing physiological data contain useful predictive information?</h3>
+    <p class="topic-intro">Missing physiological measurements may reflect monitoring decisions, clinical interventions or sensor failures. Conventional imputation can overlook useful information in these patterns, while relying on local monitoring practices may weaken generalisation. This thesis will investigate when missingness improves prediction and how robust those improvements are to changes in data availability.</p>
+  </div>
+  <details class="topic-details">
+    <summary>Objectives &amp; research questions</summary>
+    <div class="topic-details-body">
+      <div class="alt-topic">
+        <h4>Objective 1</h4>
+        <p>Measure whether missingness flags and time-since-observation improve a fixed baseline.</p>
+      </div>
+      <div class="alt-topic">
+        <h4>Objective 2</h4>
+        <p>Test sensitivity to altered missingness patterns and distinguish observed associations from causal interpretations.</p>
+      </div>
+    </div>
+  </details>
+  <details class="topic-details">
+    <summary>Methodology</summary>
+    <div class="topic-details-body">
+      <p>The student will select one VitalDB task with sufficient naturally missing measurements. Define a prediction cutoff and use only information available before it, avoiding outcome-derived missingness.</p>
+      <p>The student will compare simple imputation and forward filling with the same models augmented by missingness indicators and elapsed-time features. Fit preprocessing using training patients only.</p>
+      <p>The student will separate patients across folds and test realistic simulated sensor dropout in addition to natural missingness. Compare discrimination, calibration and subgroup performance at matched feature sets. Avoid inferring why a value is absent unless metadata support that explanation.</p>
+    </div>
+  </details>
+  <details class="topic-details">
+    <summary>Expected outputs</summary>
+    <div class="topic-details-body">
+      <p>A missing-data benchmark, a robustness analysis and guidance on when missingness features provide useful but potentially fragile information. The Santamónica, <strong>Hortal</strong> and colleagues' EEG manuscript (see reference below) offers a related design precedent: retaining patients without usable EEG through clinical-only predictions; it does not test the general predictive value of missingness patterns.</p>
+      <p>Ideally, an easy-to-use, well-documented open-source library implementing the proposed methods.</p>
+    </div>
+  </details>
+  <details class="topic-details">
+    <summary>References</summary>
+    <div class="topic-details-body">
+      <ul class="ref-list">
+        <li>Lee, H. C., et al. (2022). VitalDB, a high-fidelity multi-parameter vital signs database in surgical patients. <em>Scientific Data</em>, 9, 279. <a href="https://www.nature.com/articles/s41597-022-01411-5" target="_blank" rel="noopener">Paper</a>.</li>
+        <li>Santamónica, A., Canedo, C., <strong>Hortal, E.</strong>, &amp; Rueda, C. <em>Robust and interpretable EEG analysis framework for early outcome prediction after cardiac arrest.</em> <em>Artificial Intelligence in Medicine</em> (under review).</li>
+      </ul>
+    </div>
+  </details>
+</div>
+  
+<div class="topic-card">
+  <div class="topic-header">
+    <span class="topic-level">BSc thesis · medical AI &amp; distribution shift</span>
+    <h3>Can physiological models detect an unfamiliar patient population?</h3>
+    <p class="topic-intro">Physiological prediction models may encounter patient groups, procedures or recording conditions that differ from their training data. Detecting such differences could help identify circumstances in which predictions become less reliable. This thesis will compare simple measures of uncertainty and feature distance, examining whether they detect predefined shifts and whether those shifts are associated with poorer predictive performance.</p>
+  </div>
+  <details class="topic-details">
+    <summary>Objectives &amp; research questions</summary>
+    <div class="topic-details-body">
+      <div class="alt-topic">
+        <h4>Objective 1</h4>
+        <p>Compare confidence-based and feature-distance-based shift detectors.</p>
+      </div>
+      <div class="alt-topic">
+        <h4>Objective 2</h4>
+        <p>Assess whether detecting a shifted group also identifies clinically relevant performance degradation.</p>
+      </div>
+    </div>
+  </details>
+  <details class="topic-details">
+    <summary>Methodology</summary>
+    <div class="topic-details-body">
+      <p>The student will use one VitalDB prediction task and construct a prespecified shift using sufficiently large procedure categories or patient subgroups. Keep patient identities separate and match or document label-prevalence differences.</p>
+      <p>The student will fit a baseline classifier and a simple distance detector using source training patients only. Tune thresholds on source validation data; reserve the shifted population for evaluation.</p>
+      <p>The student will report shifted-group detection AUROC, source false-alarm rates, discrimination and calibration in each group, and error enrichment among flagged cases. A shifted input need not cause an error, and a familiar input can still be misclassified.</p>
+    </div>
+  </details>
+  <details class="topic-details">
+    <summary>Expected outputs</summary>
+    <div class="topic-details-body">
+      <p>A controlled shift benchmark and an analysis of how closely shift detection tracks model degradation. The EEG manuscript identifies independent-cohort validation as future work; this thesis examines a narrower shift-detection question and will not claim external clinical validation from a single-dataset experiment.</p>
+      <p>Ideally, an easy-to-use, well-documented open-source library implementing the proposed methods.</p>
+    </div>
+  </details>
+  <details class="topic-details">
+    <summary>References</summary>
+    <div class="topic-details-body">
+      <ul class="ref-list">
+        <li>Lee, H. C., et al. (2022). VitalDB, a high-fidelity multi-parameter vital signs database in surgical patients. <em>Scientific Data</em>, 9, 279. <a href="https://www.nature.com/articles/s41597-022-01411-5" target="_blank" rel="noopener">Paper</a>.</li>
+        <li>Santamónica, A., Canedo, C., <strong>Hortal, E.</strong>, &amp; Rueda, C. <em>Robust and interpretable EEG analysis framework for early outcome prediction after cardiac arrest.</em> <em>Artificial Intelligence in Medicine</em> (under review).</li>
+      </ul>
+    </div>
+  </details>
+</div>
+  
+<div class="topic-card">
+  <div class="topic-header">
+    <span class="topic-level">BSc thesis · self-supervised learning &amp; physiological machine learning</span>
+    <h3>Can we learn useful physiological representations from very little labelled data?</h3>
+    <p class="topic-intro">Self-supervised learning offers a way to use unlabelled physiological recordings when annotated data are scarce. Its benefits depend on the available data, the pretraining approach and the ability to generalise between participants. This thesis will investigate when a compact pretrained model outperforms supervised training for a single physiological prediction task.</p>
+  </div>
+  <details class="topic-details">
+    <summary>Objectives &amp; research questions</summary>
+    <div class="topic-details-body">
+      <div class="alt-topic">
+        <h4>Objective 1</h4>
+        <p>Compare supervised training from scratch with self-supervised pretraining at several labelled-participant budgets.</p>
+      </div>
+      <div class="alt-topic">
+        <h4>Objective 2</h4>
+        <p>Evaluate cross-participant transfer and the interaction between labelled and unlabelled data availability.</p>
+      </div>
+    </div>
+  </details>
+  <details class="topic-details">
+    <summary>Methodology</summary>
+    <div class="topic-details-body">
+      <p>The student will choose public datasets such as WESAD and a single stress/affect classification task. Implement a compact contrastive encoder using a small set of justified augmentations.</p>
+      <p>The student will construct labelled subsets by participant rather than by arbitrary window count. Pretrain only on permitted training participants; exclude held-out test participants for the primary inductive comparison.</p>
+      <p>The student will use matched architectures, tuning budgets and repeated subset selections. Include a classical feature baseline and report balanced accuracy or macro-F1, uncertainty across participant splits and computational cost.</p>
+    </div>
+  </details>
+  <details class="topic-details">
+    <summary>Expected outputs</summary>
+    <div class="topic-details-body">
+      <p>Learning curves against labelled-participant and unlabelled-data budgets, a reproducible pretraining pipeline and evidence about when pretraining is worth its cost. Cross-participant transfer and controlled budgets provide the focus beyond a generic supervised-versus-self-supervised comparison.</p>
+      <p>Ideally, an easy-to-use, well-documented open-source library implementing the proposed methods.</p>
+    </div>
+  </details>
+  <details class="topic-details">
+    <summary>References</summary>
+    <div class="topic-details-body">
+      <ul class="ref-list">
+        <li>Schmidt, P., Reiss, A., Dürichen, R., Marberger, C., &amp; Van Laerhoven, K. (2018). Introducing WESAD, a Multimodal Dataset for Wearable Stress and Affect Detection. <em>ICMI</em>, 400–408. <a href="https://doi.org/10.1145/3242969.3242985" target="_blank" rel="noopener">Paper</a>.</li>
+        <li>Chen, T., Kornblith, S., Norouzi, M., &amp; Hinton, G. (2020). A Simple Framework for Contrastive Learning of Visual Representations. <em>PMLR</em>, 119, 1597–1607. Methodological background from computer vision; physiological validity must be tested separately. <a href="https://proceedings.mlr.press/v119/chen20j.html" target="_blank" rel="noopener">Paper</a>.</li>
+      </ul>
+    </div>
+  </details>
+</div>
+
+<div class="topic-card">
+  <div class="topic-header">
+    <span class="topic-level">BSc thesis · signal processing &amp; interpretable quality control</span>
+    <h3>Can physiological constraints identify implausible signal segments?</h3>
+    <p class="topic-intro">An unusual physiological recording may indicate a meaningful response, a rare condition or a measurement problem. Statistical anomaly detection alone cannot reliably distinguish these possibilities. This thesis will examine whether conservative physiological plausibility constraints improve the detection of corrupted ECG or PPG segments when combined with statistical anomaly scores.</p>
+  </div>
+  <details class="topic-details">
+    <summary>Objectives &amp; research questions</summary>
+    <div class="topic-details-body">
+      <div class="alt-topic">
+        <h4>Objective 1</h4>
+        <p>Compare physiological rules, statistical anomaly detection and a simple hybrid detector.</p>
+      </div>
+      <div class="alt-topic">
+        <h4>Objective 2</h4>
+        <p>Identify failure modes and false alarms on genuine but unusual physiological segments.</p>
+      </div>
+    </div>
+  </details>
+  <details class="topic-details">
+    <summary>Methodology</summary>
+    <div class="topic-details-body">
+      <p>The student will use one ECG or PPG dataset, for example WESAD, with realistic injected clipping, dropout, baseline shifts or impulsive artefacts. Use independently annotated real artefacts if available, reporting synthetic and real evaluations separately.</p>
+      <p>The student will define conservative sensor- and task-specific constraints for timing, continuity and waveform morphology. Record when feature extraction fails rather than silently treating failures as extreme physiological values.</p>
+      <p>The student will hold out participants and corruption families where feasible. Measure artefact-detection precision–recall, false-positive rates and severity sensitivity. Expert review is required before describing a suspected physiological pattern as truly impossible.</p>
+    </div>
+  </details>
+  <details class="topic-details">
+    <summary>Expected outputs</summary>
+    <div class="topic-details-body">
+      <p>An interpretable corruption-detection benchmark and documented rules with their limitations. Santamónica and colleagues’ EEG score is related to quality-control background, not a universal plausibility test; this project focuses on ECG/PPG constraint validation rather than reproducing the EEG score.</p>
+      <p>Ideally, an easy-to-use, well-documented open-source library implementing the proposed methods.</p>
+    </div>
+  </details>
+  <details class="topic-details">
+    <summary>References</summary>
+    <div class="topic-details-body">
+      <ul class="ref-list">
+        <li>Schmidt, P., Reiss, A., Dürichen, R., Marberger, C., &amp; Van Laerhoven, K. (2018). Introducing WESAD, a Multimodal Dataset for Wearable Stress and Affect Detection. <em>ICMI</em>, 400–408. <a href="https://doi.org/10.1145/3242969.3242985" target="_blank" rel="noopener">Paper</a>.</li>
+        <li>Santamónica, A., Canedo, C., <strong>Hortal, E.</strong>, &amp; Rueda, C. <em>Robust and interpretable EEG analysis framework for early outcome prediction after cardiac arrest.</em> <em>Artificial Intelligence in Medicine</em> (under review).</li>
+      </ul>
+    </div>
+  </details>
+</div>
+
+<!--
+<div class="topic-card">
+  <div class="topic-header">
+    <span class="topic-level">BSc thesis · computer vision &amp; biomechanics</span>
+    <h3>How many cameras are necessary for accurate human motion analysis?</h3>
+    <p class="topic-intro">The accuracy of markerless motion analysis depends partly on camera number and placement, with effects that vary across movements and joints. This thesis will assess the trade-off between recording complexity and measurement accuracy for a fixed reconstruction method, identifying suitable camera configurations for a small set of biomechanical measurements.</p>
+  </div>
+  <details class="topic-details">
+    <summary>Objectives &amp; research questions</summary>
+    <div class="topic-details-body">
+      <div class="alt-topic">
+        <h4>Objective 1</h4>
+        <p>Measure how camera count and viewpoint affect selected joint angles or movement parameters.</p>
+      </div>
+      <div class="alt-topic">
+        <h4>Objective 2</h4>
+        <p>Identify economical configurations that satisfy predefined measurement-error tolerances.</p>
+      </div>
+    </div>
+  </details>
+  <details class="topic-details">
+    <summary>Methodology</summary>
+    <div class="topic-details-body">
+      <p>The student will use existing synchronised multi-camera recordings with marker-based VICON reference data, subject to access. Restrict the project to one or two movements and reuse a fixed calibrated reconstruction pipeline.</p>
+      <p>The student will evaluate selected camera subsets with controlled calibration and identical preprocessing. Compare reference angle errors, reconstruction failures and joint-specific results; do not mix single-camera and multi-camera methods without accounting for algorithm differences.</p>
+      <p>The student will separate participants for configuration selection and evaluation. Report error distributions and failure rates, including occluded movements, and quantify the trade-off between cameras, processing time and measurement accuracy.</p>
+    </div>
+  </details>
+  <details class="topic-details">
+    <summary>Expected outputs</summary>
+    <div class="topic-details-body">
+      <p>A camera-subset benchmark and movement-specific configuration guidance. Recommendations will apply to the tested pipeline, camera geometry and movements rather than asserting a universal minimum camera count.</p>
+    </div>
+  </details>
+  <details class="topic-details">
+    <summary>References</summary>
+    <div class="topic-details-body">
+      <ul class="ref-list">
+        <li>Uhlrich, S. D., et al. (2023). OpenCap: Human movement dynamics from smartphone videos. <em>PLOS Computational Biology</em>, 19(10), e1011462. <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011462" target="_blank" rel="noopener">Paper</a>.</li>
+      </ul>
+    </div>
+  </details>
+</div>
+-->
+  
+<div class="topic-card">
+  <div class="topic-header">
+    <span class="topic-level">BSc thesis · affective computing &amp; dataset diagnostics</span>
+    <h3>Can simple diagnostics predict the learnability of physiological labels?</h3>
+    <p class="topic-intro">Before developing complex physiological models, researchers need evidence that the available signals support the assigned labels. <strong>Hortal</strong> and Semerci’s previous work (see reference below) uses permutation testing, label flip-rate analysis, Kruskal–Wallis separation and ARI clustering consistency to assess that support. This thesis will extend those diagnostics by testing whether they predict <strong>subsequent performance on held-out participants</strong> across controlled experimental conditions.</p>
+  </div>
+  <details class="topic-details">
+    <summary>Objectives &amp; research questions</summary>
+    <div class="topic-details-body">
+      <div class="alt-topic">
+        <h4>Objective 1</h4>
+        <p>Evaluate the predictive value of diagnostic scores for subsequent subject-independent classification.</p>
+      </div>
+      <div class="alt-topic">
+        <h4>Objective 2</h4>
+        <p>Test whether the relationship transfers to unseen corruption levels, label schemes or datasets, rather than simply rerunning the book chapter’s battery.</p>
+      </div>
+    </div>
+  </details>
+  <details class="topic-details">
+    <summary>Methodology</summary>
+    <div class="topic-details-body">
+      <p>The student will use public datasets such as WESAD and CASE if feasible, creating prespecified label-corruption, granularity and feature-subset conditions. Distinguish temporal label consistency from physiological separability.</p>
+      <p>The student will compute diagnostics inside training partitions, then measure the performance of fixed downstream classifiers on held-out participants. Use grouped resampling and treat conditions from one dataset as related observations.</p>
+      <p>The student will fit a simple diagnostic-to-performance model on development conditions and evaluate on held-out conditions or a second dataset. Compare against sample size, class balance and a small supervised baseline; report prediction error and rank correlation.</p>
+      <p>The student will interpret learnability as conditional on the measured signals, features and model family. The chapter’s findings about timing and granularity are comparative, not causal proof; weak separability does not invalidate an emotion construct or establish incorrect labels.</p>
+    </div>
+  </details>
+  <details class="topic-details">
+    <summary>Expected outputs</summary>
+    <div class="topic-details-body">
+      <p>A validated diagnostic-to-performance analysis and a lightweight assessment report. The contribution is prospective prediction of downstream performance and its limits, extending the chapter’s dataset-level diagnostics rather than presenting them as a new method.</p>
+      <p>Ideally, an easy-to-use, well-documented open-source library implementing the proposed methods.</p>
+    </div>
+  </details>
+  <details class="topic-details">
+    <summary>References</summary>
+    <div class="topic-details-body">
+      <ul class="ref-list">
+        <li><strong>Hortal, E.</strong>, &amp; Semerci, Y. C. <em>Affective computing for education and industrial training: principles and guidelines for reliable affect labelling.</em> Springer/XR2Learn book chapter. <strong>Accepted for publication; unpublished.</strong></li>
+        <li>Schmidt, P., Reiss, A., Dürichen, R., Marberger, C., &amp; Van Laerhoven, K. (2018). Introducing WESAD, a Multimodal Dataset for Wearable Stress and Affect Detection. <em>ICMI</em>, 400–408. <a href="https://doi.org/10.1145/3242969.3242985" target="_blank" rel="noopener">Paper</a>.</li>
+        <li>Sharma, K., Castellini, C., van den Broek, E. L., Albu-Schaeffer, A., &amp; Schwenker, F. (2019). A dataset of continuous affect annotations and physiological signals for emotion analysis. <em>Scientific Data</em>, 6, 196. <a href="https://www.nature.com/articles/s41597-019-0209-0" target="_blank" rel="noopener">Paper</a>.</li>
+      </ul>
+    </div>
+  </details>
+</div>
+  
+<div class="topic-card">
+  <div class="topic-header">
+    <span class="topic-level">BSc thesis · wearable computing &amp; multimodal signal analysis</span>
+    <h3>Can we distinguish sensor noise from genuine physiological changes?</h3>
+    <p class="topic-intro">A sudden change in PPG-derived heart rate may reflect a genuine physiological response or a movement artefact. Signal quality, temporal consistency and agreement between sensors may help distinguish these explanations. This thesis will investigate that distinction using synchronised wearable recordings and an independent cardiac reference where its quality is sufficient.</p>
+  </div>
+  <details class="topic-details">
+    <summary>Objectives &amp; research questions</summary>
+    <div class="topic-details-body">
+      <div class="alt-topic">
+        <h4>Objective 1</h4>
+        <p>Compare a single-signal detector with a detector using motion and an independent cardiac reference.</p>
+      </div>
+      <div class="alt-topic">
+        <h4>Objective 2</h4>
+        <p>Test whether adding cross-sensor information reduces false alarms on genuine physiological changes.</p>
+      </div>
+    </div>
+  </details>
+  <details class="topic-details">
+    <summary>Methodology</summary>
+    <div class="topic-details-body">
+      <p>The student will use synchronised WESAD (or any other public dataset) wrist PPG and accelerometry with chest ECG as a reference, subject to alignment and ECG-quality checks. Restrict analysis to segments where the reference can support cardiac timing comparisons.</p>
+      <p>The student will identify candidate PPG changes, derive reference-consistent and reference-inconsistent cases using transparent criteria, and supplement them with known synthetic artefacts. Motion does not automatically imply noise, and ECG–PPG disagreement is not perfect ground truth.</p>
+      <p>The student will compare quality-only, temporal-only and combined feature models with participant-held-out evaluation. Report sensitivity to artefacts and specificity for supported real changes, separating natural, ambiguous and synthetic cases.</p>
+      <p>The student will assess an inference setting using only PPG and accelerometry, reserving ECG for evaluation; any method using ECG at inference must be reported separately.</p>
+    </div>
+  </details>
+  <details class="topic-details">
+    <summary>Expected outputs</summary>
+    <div class="topic-details-body">
+      <p>A multimodal disambiguation benchmark, a lightweight detector and an error analysis of ambiguous cases. The EEG manuscript provides related quality-indicator ideas, but does not establish that those indicators distinguish sensor artefacts from genuine wearable physiological changes.</p>
+      <p>Ideally, an easy-to-use, well-documented open-source library implementing the proposed methods.</p>
+    </div>
+  </details>
+  <details class="topic-details">
+    <summary>References</summary>
+    <div class="topic-details-body">
+      <ul class="ref-list">
+        <li>Schmidt, P., Reiss, A., Dürichen, R., Marberger, C., &amp; Van Laerhoven, K. (2018). Introducing WESAD, a Multimodal Dataset for Wearable Stress and Affect Detection. <em>ICMI</em>, 400–408. <a href="https://doi.org/10.1145/3242969.3242985" target="_blank" rel="noopener">Paper</a>.</li>
+        <li>Santamónica, A., Canedo, C., <strong>Hortal, E.</strong>, &amp; Rueda, C. <em>Robust and interpretable EEG analysis framework for early outcome prediction after cardiac arrest.</em> <em>Artificial Intelligence in Medicine</em> (under review).</li>
+      </ul>
+    </div>
+  </details>
+</div>
+  
+<div class="topic-card">
+  <div class="topic-header">
+    <span class="topic-level">BSc thesis · multimodal machine learning &amp; sensor selection</span>
+    <h3>When does an additional physiological sensor improve prediction?</h3>
+    <p class="topic-intro">An additional physiological sensor may provide complementary information, repeat information already available or introduce further noise. This thesis will estimate the marginal predictive value of selected sensors for a single task, examining how that value changes between participants and under different signal-quality conditions.</p>
+  </div>
+  <details class="topic-details">
+    <summary>Objectives &amp; research questions</summary>
+    <div class="topic-details-body">
+      <div class="alt-topic">
+        <h4>Objective 1</h4>
+        <p>Quantify the incremental performance and calibration benefit of each selected sensor.</p>
+      </div>
+      <div class="alt-topic">
+        <h4>Objective 2</h4>
+        <p>Test whether sensor value changes under realistic degradation and whether a simple selection policy preserves performance with fewer inputs.</p>
+      </div>
+    </div>
+  </details>
+  <details class="topic-details">
+    <summary>Methodology</summary>
+    <div class="topic-details-body">
+      <p>The student will use public datasets such as WESAD with two or three modalities, or one VitalDB task if preferred. Define a strong single-sensor baseline and a small set of sensor combinations, avoiding an exhaustive search.</p>
+      <p>The student will compare models on the same participants, time windows and label definitions, with matched tuning effort. Distinguish adding a sensor from merely increasing model capacity.</p>
+      <p>The student will estimate paired performance differences with participant-level resampling. Add realistic degradation or dropout and compare feature-level fusion with a simple quality-aware selection rule tuned only on validation data.</p>
+      <p>The student will report task accuracy, calibration, failure coverage and acquisition burden using documented sensor requirements; avoid inventing monetary costs. Associations and ablation gains are evidence of predictive value rather than causal sensor effects.</p>
+    </div>
+  </details>
+  <details class="topic-details">
+    <summary>Expected outputs</summary>
+    <div class="topic-details-body">
+      <p>A sensor-ablation study, paired estimates of marginal benefit and a practical selection recommendation. <strong>Hortal</strong> and Semerci’s XR2Learn chapter motivates checking whether labels are supported before interpreting sensor gains. Santamónica, <strong>Hortal</strong> and colleagues' EEG manuscript’s EEG-versus-clinical-only validation ablation (see reference below) is a related example of added predictive information, not evidence that any extra wearable sensor will help.</p>
+      <p>Ideally, an easy-to-use, well-documented open-source library implementing the proposed methods.</p>
+    </div>
+  </details>
+  <details class="topic-details">
+    <summary>References</summary>
+    <div class="topic-details-body">
+      <ul class="ref-list">
+        <li><strong>Hortal, E.</strong>, &amp; Semerci, Y. C. <em>Affective computing for education and industrial training: principles and guidelines for reliable affect labelling.</em> Springer/XR2Learn book chapter. <strong>Accepted for publication; unpublished.</strong></li>
+        <li>Santamónica, A., Canedo, C., <strong>Hortal, E.</strong>, &amp; Rueda, C. <em>Robust and interpretable EEG analysis framework for early outcome prediction after cardiac arrest.</em> <em>Artificial Intelligence in Medicine</em> (under review).</li>
+        <li>Schmidt, P., Reiss, A., Dürichen, R., Marberger, C., &amp; Van Laerhoven, K. (2018). Introducing WESAD, a Multimodal Dataset for Wearable Stress and Affect Detection. <em>ICMI</em>, 400–408. <a href="https://doi.org/10.1145/3242969.3242985" target="_blank" rel="noopener">Paper</a>.</li>
+      </ul>
+    </div>
+  </details>
+</div>
+          </div>
+        </details>
       </div>
     </section>
 
