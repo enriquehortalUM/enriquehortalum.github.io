@@ -530,6 +530,120 @@
           <summary class="degree-summary"><h2>BSc theses</h2><span class="degree-count">10+ topics</span></summary>
           <div class="degree-body">
             <p class="section-intro">These projects are designed for BSc theses, with an initial focused research question, experimental scope and outputs. Data access and the final scope will be agreed with the supervisor.</p>
+
+            
+
+<!-- ── BSc Computer Science Thesis Topic ──────────── -->
+<div class="topic-card">
+  <div class="topic-header">
+    <span class="topic-level">BSc thesis · computer science students only</span>
+    <h3>Design and evaluation of reliable conversational assistants for university courses</h3>
+    <p class="topic-intro">
+      University students frequently need information about course organisation, assessment procedures, deadlines, and learning materials. Although this information is available in official course documents, finding relevant details can be time-consuming. Conversational assistants based on large language models (LLMs) offer a natural way to access this information, but may provide inaccurate, unsupported, or misleading answers. <strong>Retrieval-Augmented Generation (RAG)</strong> combines document retrieval with language generation to address some of these limitations. This thesis focuses on developing and evaluating a safe, user-friendly, server-based chatbot that answers questions using a predefined collection of course documents. Several research directions are available, focusing on <strong>information retrieval, answer reliability, and user trust</strong>.
+      These directions can be explored individually or combined, depending on student interests and the agreed project scope.
+    </p>
+  </div>
+
+  <details class="topic-details">
+    <summary>Objectives &amp; alternative topics</summary>
+    <div class="topic-details-body">
+      <div class="alt-topic">
+        <h4>Alternative 1, improving document retrieval and answer accuracy</h4>
+        <p>
+          Investigate how different information retrieval strategies influence the accuracy and relevance of answers generated from course documents. The work will compare approaches such as keyword-based search, semantic retrieval using embeddings, and hybrid retrieval. Different document segmentation and ranking strategies may also be explored.
+          The objective is to identify which approaches provide the most accurate and efficient retrieval of course-specific information, particularly for ambiguous or complex questions.
+        </p>
+      </div>
+      <div class="alt-topic">
+        <h4>Alternative 2, preventing hallucinations and improving answer reliability</h4>
+        <p>
+          Investigate mechanisms that prevent a conversational assistant from generating incorrect, unsupported, or misleading answers. The work will explore evidence-based answer validation, confidence estimation, and strategies for recognising questions that cannot be answered using the available documents. Particular attention will be paid to the trade-off between answering useful questions and refusing those for which sufficient evidence is unavailable. The objective is to develop and evaluate mechanisms that improve reliability without unnecessarily restricting the assistant's functionality.
+        </p>
+      </div>
+      <div class="alt-topic">
+        <h4>Alternative 3, explainability and user trust in conversational assistants</h4>
+        <p>
+          Investigate how different ways of presenting answers influence users' understanding, trust, and ability to verify information.
+          The work will explore mechanisms such as source citations, links to relevant document sections, supporting evidence, and uncertainty indicators. Different interface designs and explanation strategies will be compared through controlled evaluations or user studies.
+          The objective is to determine how conversational assistants can communicate their answers and limitations transparently, helping students distinguish reliable information from potentially unsupported responses.
+        </p>
+      </div>
+    </div>
+  </details>
+
+  <details class="topic-details">
+    <summary>Methodology</summary>
+    <div class="topic-details-body">
+      <p>
+        The project will involve the design and implementation of a <strong>server-based conversational assistant</strong> that uses a predefined collection of official course documents, including course manuals, assessment guidelines, schedules, learning materials, and frequently asked questions. The assistant will provide a user-friendly web interface and retrieve relevant information from these documents to generate answers.
+      </p>
+      <p>
+        The student will implement a document processing and retrieval pipeline, integrate an existing language model, and develop the necessary backend and frontend components. The system will serve as an experimental platform for investigating the selected research direction. Developing or fine-tuning a new language model is not required.
+      </p>
+      <p>
+        Depending on the selected direction, the research may involve comparing retrieval algorithms (e.g., BM25, vector-based search, hybrid retrieval), investigating answer validation and refusal mechanisms, or designing interfaces that present supporting evidence and communicate uncertainty.
+      </p>
+      <p>
+        A representative evaluation set of course-related questions will be created, including straightforward, ambiguous, complex, and unanswerable questions. Where appropriate, reference answers and supporting document passages will be identified to enable systematic evaluation.
+      </p>
+      <p>
+        Evaluation methods will depend on the selected research direction and may include <strong>retrieval precision and recall, answer correctness, evidence support, hallucination rates, refusal accuracy, response time, and usability or user trust assessments</strong>.
+        Experiments will compare alternative system configurations under controlled conditions, with particular emphasis on reproducibility and critical analysis of the results.
+      </p>
+      <p>
+        The three alternatives are not mutually exclusive. For example, the student may investigate whether improved retrieval reduces hallucinations, or whether presenting source evidence helps users identify incorrect answers. The final scope and combination of research questions will be defined together with the supervisor to ensure a manageable BSc thesis.
+      </p>
+    </div>
+  </details>
+
+  <details class="topic-details">
+    <summary>Expected outputs</summary>
+    <div class="topic-details-body">
+      <p>
+        A functional, server-based conversational assistant capable of answering course-related questions using a predefined collection of documents, together with a systematic experimental evaluation of the selected research questions. Expected deliverables include a well-documented software prototype, a reproducible evaluation benchmark, quantitative and/or user-based comparisons of alternative approaches, and an analysis of the trade-offs between answer accuracy, reliability, explainability, and usability. 
+        The main research contribution will be the <strong>experimental investigation and validation of design choices</strong> for trustworthy document-based conversational assistants, rather than the software implementation alone.
+      </p>
+    </div>
+  </details>
+
+  <details class="topic-details">
+    <summary>References</summary>
+    <div class="topic-details-body">
+      <ul class="ref-list">
+        <li>
+          Lewis, P., et al. (2020).
+          Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.
+          <em>Advances in Neural Information Processing Systems (NeurIPS)</em>.
+          <a href="https://arxiv.org/abs/2005.11401"
+             target="_blank" rel="noopener">Link</a>
+        </li>
+        <li>
+          Gao, Y., et al. (2024).
+          Retrieval-Augmented Generation for Large Language Models: A Survey.
+          <em>arXiv:2312.10997</em>.
+          <a href="https://arxiv.org/abs/2312.10997"
+             target="_blank" rel="noopener">Link</a>
+        </li>
+        <li>
+          Es, S., James, J., Espinosa-Anke, L., &amp; Schockaert, S. (2024).
+          RAGAs: Automated Evaluation of Retrieval Augmented Generation.
+          <em>Proceedings of EACL 2024: System Demonstrations</em>,
+          150–158.
+          <a href="https://aclanthology.org/2024.eacl-demo.16/"
+             target="_blank" rel="noopener">Link</a>
+        </li>
+      </ul>
+    </div>
+  </details>
+</div>
+<!-- ── End BSc Computer Science Thesis Topic ──────── -->
+            
+            
+            
+            
+            
+            
+            
 <div class="topic-card">
   <div class="topic-header">
     <span class="topic-level">BSc thesis · self-supervised learning &amp; signal processing</span>
